@@ -91,7 +91,7 @@ function pomodoroLogic(event) {
     else{
         isStart = true;
         startButton.innerHTML = "Pause";
-        interval1 = setInterval(progressDecrementer, 100);
+        interval1 = setInterval(progressDecrementer, 1000);
     }
     if(isStart || isPause){
         sessionTimeMinusButton.setAttribute("disabled", "True");
